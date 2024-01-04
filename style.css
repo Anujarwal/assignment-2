@@ -21,8 +21,10 @@
 }
 
 .navbar img{
-    width: 12%;
-    color: white;
+    width: 5%;
+    /* color: black; */
+    background-color: white;
+    border-radius: 20px;
 }
 
 .navbar ul {
@@ -49,6 +51,10 @@
 .navbar span button:first-child{
     background-color: red;
     color: white;
+}
+
+.setting{
+    display: none;
 }
 
 .container{
@@ -135,4 +141,59 @@
     height: 100px;
     text-align: center;
     padding-top: 10px;
+}
+
+
+@media (max-width:768px) {
+    .main-container{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    .navbar img{
+    width: 40px;
+    border-radius: 30px;
+    }
+
+    .container{
+        width: 100%;
+        height: auto;
+        justify-content: space-evenly;
+    }
+
+    .container span button{
+    width: 110px;
+    height: 25px;
+    }
+
+    .container ul{
+        margin-left: 20px;
+    }
+
+    .container ul li:nth-child(2){
+        margin-left: 20px;
+    }
+
+    .container span {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .container span button i{
+        display: none;
+    }
+
+    #Search-btn{
+    margin-left: 320px;
+    }
+
+    .container p br{
+        display: none;
+    }
+    
 }
